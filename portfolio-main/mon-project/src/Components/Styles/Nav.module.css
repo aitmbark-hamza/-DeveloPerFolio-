@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* CSS */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  gap: 8px;
+}
+
+.logo .tag {
+  color: gray;
+  font-weight: 300;
+}
+
+.logo .name {
+  font-family: "Great Vibes", cursive; 
+  color:rgb(6, 6, 133);
+  font-weight: 500;
+   
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  flex-wrap: wrap;
+  padding: 10px 20px;
+}
+
+nav .logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 10px;
+}
+
+nav li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+  position: relative;
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #4f8cff 0%, #1e3c72 100%);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: darkblue;
+  font-weight: bold;
+}
+
+nav a:hover::after {
+  transform: scaleX(1);
+}
+
+
+
+/* ✅ Media Query: Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+  nav a {
+    font-size: 22px;
+  }
+
+  .logo img {
+    width: 80px;
+    height: auto;
+  }
+
+  .themeToggle {
+    margin-top: 10px;
+  }
+}

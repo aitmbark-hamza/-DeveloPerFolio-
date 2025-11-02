@@ -1,0 +1,112 @@
+
+
+.projectsSection {
+  margin: 80px auto;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #343a40;
+  margin-bottom: 40px;
+}
+
+.projectContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.projectCard {
+  position: relative;            
+  width: 340px;
+  height: 360px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  cursor: pointer;
+  will-change: transform;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  transition: transform 0.5s ease;
+}
+
+.projectCard:hover .projectImage {
+  transform: scale(1.08);
+}
+
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 24, 39, 0.92); 
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+  padding: 24px;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.overlay h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e0f2f1;
+}
+
+.overlay p {
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: #d1d5db;
+}
+
+
+.overlay a { pointer-events: auto; } 
+.overlay button {
+  padding: 12px 20px;
+  background: linear-gradient(90deg, #3C6E71, #284B63);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 12px rgba(44,78,99,0.25);
+}
+
+.overlay button:hover {
+  background: #fff;
+  color: #284B63;
+  border: 2px solid #3C6E71;
+  box-shadow: 0 6px 22px rgba(40,75,99,0.35);
+}
+
+
+@media (max-width: 400px) {
+  .projectCard { width: 100%; height: 320px; }
+}
+
+
+@media (prefers-color-scheme: light) {
+  .projectCard { background: #ffffff; }
+  .overlay { background: rgba(28,37,65,0.96); }
+}

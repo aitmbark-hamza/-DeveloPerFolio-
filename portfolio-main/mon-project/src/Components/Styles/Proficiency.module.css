@@ -1,0 +1,52 @@
+.skill {
+  margin-bottom:15px;
+}
+
+.label {
+  margin-bottom: 5px;
+}
+
+.label h1 {
+  color: #00000059;
+  margin-bottom: 20px;
+ margin-left: 100px;
+}
+
+.bar {
+  display: block;
+  background-color: #e0e0e0;
+  height: 25px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.bar span {
+  display: block;
+  height: 100%;
+  background-color: #aaa5ff;
+  width: 0;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+
+.frontend span {
+  width: 85%;
+}
+
+.backend span {
+  width: 30%;
+}
+
+.programming span {
+  width: 85%;
+}
+
+.title {
+  font-size: 40px;
+  color: #343a40;
+  margin-bottom: 50px;
+  margin-top: 160px;
+   margin-left: 100px;
+}

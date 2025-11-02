@@ -1,0 +1,166 @@
+.headerContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.headerTitle {
+  font-size: 36px;
+  font-weight: bold;
+  color: #343a40;
+  margin-top: 40px;
+  font-family: 'Playfair Display', serif;
+}
+.headerDescription {
+  font-size: 20px;
+  color: #868e96;
+  max-width: 600px;
+  margin-top: 50px;
+  font-family: 'Playfair Display', serif;
+  line-height: 1.6;
+}
+.headerDescription p {
+  color: #868e96;
+}
+/* 🎯 Social Icons (نسخة دائرية وملونة) */
+.headerSocialIcons {
+  display: flex;
+  gap: 18px;
+  margin-top: 40px;
+}
+.email {
+  background-color: #e84a3c; /* لون أحمر ديال الجيميل */
+}
+
+.email:hover {
+  background-color: #ff5f4c;
+}
+
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  color: white;
+  font-size: 26px;
+  transition: all 0.3s ease;
+}
+
+.icon:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* 🌈 ألوان الأيقونات */
+.github {
+  background-color: #333;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.facebook {
+  background-color: #1877f2;
+}
+
+.tiktok {
+  background-color: #010101;
+}
+
+/* 🖱️ تأثير بسيط وقت التحويم */
+.github:hover {
+  background-color: #555;
+}
+.linkedin:hover {
+  background-color: #009be6;
+}
+.facebook:hover {
+  background-color: #3b5998;
+}
+.tiktok:hover {
+  background-color: #111;
+}
+
+/* باقي الستايلات اللي عندك */
+.headerContact button,
+.headerResume button {
+  margin-top: 20px;
+  height: 50px;
+  background: rgb(6, 6, 133);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(44, 78, 99, 0.12);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.headerContact button {
+  width: 200px;
+}
+
+.headerResume button {
+  width: 300px;
+}
+
+.headerContact button:hover,
+.headerResume button:hover {
+  background: #fff;
+  color: #3C6E71;
+  border: 2px solid #3C6E71;
+  box-shadow: 0 4px 24px #284B63;
+}
+
+.headerContact {
+  display: flex;
+  gap: 20px;
+}
+
+.headerImage {
+  width: 400px;
+  height: 400px;
+  margin-left: 30px;
+  margin-right: 37px;
+  cursor: pointer;
+  position: relative;
+  animation: pic 1s infinite alternate;
+  z-index: -1;
+}
+
+@keyframes pic {
+  0% {
+    left: 20px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+/* Git commands section */
+.gitCommands {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f8f9fa;
+  border-left: 4px solid #007bff;
+  padding: 10px 15px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+.gitCommands code {
+  display: block;
+  white-space: pre;
+  color: #333;
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 3px;
+  margin-top: 10px;
+}
